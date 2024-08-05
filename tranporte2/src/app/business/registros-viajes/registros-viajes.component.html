@@ -1,0 +1,75 @@
+<div class="max-w-4xl mx-auto py-12">
+  <h2 class="text-2xl font-bold text-gray-900">Registrar Viaje</h2>
+  <form class="mt-8 space-y-6" action="#" method="POST">
+    <div class="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+      
+      <!-- Gerente de tienda -->
+      <div class="sm:col-span-3">
+        <label for="store_manager" class="block text-sm font-medium text-gray-700">Usario</label>
+        <input type="text" id="store_manager" name="store_manager" value="Gerente de tienda" readonly 
+          class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-gray-100 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm">
+      </div>
+
+      <!-- Sucursal -->
+      <div class="sm:col-span-3">
+        <label for="branch" class="block text-sm font-medium text-gray-700">Sucursal</label>
+        <select id="branch" name="branch" 
+          class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm">
+          <option value="1">Sucursal Central</option>
+          <option value="2">Sucursal Norte</option>
+          <option value="3">Sucursal Sur </option>
+          <option value="3">Sucursal Metropolitana </option>
+        </select>
+      </div>
+
+      <!-- Colaboradores -->
+      <div class="sm:col-span-3">
+        <label for="transportist" class="block text-sm font-medium text-gray-700">Coloboladores</label>
+        <select id="transportist" name="transportist" 
+          class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm">
+          <option value="1">Clovis ewens</option>
+          <option value="2">julia martinez</option>
+          <option value="3">sergio</option>
+          <option value="3">crintian</option>
+          <option value="3">michelle</option>
+          <option value="3">michelle</option>
+        </select>
+      </div>
+
+
+      <!-- Transportista -->
+      <div class="sm:col-span-3">
+        <label for="transportist" class="block text-sm font-medium text-gray-700">Transportista</label>
+        <select id="transportist" name="transportist" 
+          class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm">
+          <option value="1">francisco</option>
+          <option value="2">Luis fernado</option>
+          <option value="3">Guillermo</option>
+        </select>
+      </div>
+
+      <!-- Distancia Total -->
+      <div class="sm:col-span-6">
+        <label for="distance" class="block text-sm font-medium text-gray-700">Distancia en (km)</label>
+        <input type="number"  min="1" max="50" class="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+      </div>
+
+      <!-- Fecha del Viaje -->
+      <div class="sm:col-span-6">
+        <label for="trip_date" class="block text-sm font-medium text-gray-700">Fecha del Viaje</label>
+        <input type="date" id="trip_date" name="trip_date" 
+          class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm">
+      </div>
+    </div>
+
+    <div class="pt-5">
+      <div class="flex justify-end">
+        <button type="submit" 
+          class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          Registrar Viaje
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
